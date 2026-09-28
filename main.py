@@ -74,7 +74,7 @@ while vida > 0 and pontuação < 5:
             """)
             time.sleep(1)
         sd.wait()
-        wav.write("teste.wav", sample_rate, recording)
+        wav.write("audio.wav", sample_rate, recording)
         print("""Gravação concluída, estou reconhecendo...
         """)
         time.sleep(1)
