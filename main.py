@@ -26,7 +26,8 @@ idiomas = {
     "Inglês": ["1", "en-US", "en", "english", "English", "ingles", "Inglês", "Ingles", "inglês"],
     "Espanhol": ["2", "es-ES", "es", "spanish", "Spanish", "espanhol", "Espanhol"],
     "Alemão": ["3", "de-DE", "de", "german", "German", "alemão", "Alemão", "Alemao", "alemao"],
-    "Italiano": ["4", "it-IT", "it", "italian", "Italian", "italiano", "Italiano"]
+    "Italiano": ["4", "it-IT", "it", "italian", "Italian", "italiano", "Italiano"],
+    "Japonês": ["5", "ja-JP", "ja", "japanese", "Japanese", "japonês", "Japonês", "Japones", "japones"]
 }
 
 print("""
@@ -64,9 +65,10 @@ Para começar, digite o idioma de saída para a tradução
 Inglês
 Espanhol
 Alemão
-Italiano: """)
+Italiano
+Japonês: """)
 
-    if input_target in idiomas["Alemão"] or input_target in idiomas["Espanhol"] or input_target in idiomas["Inglês"] or input_target in idiomas["Italiano"]:
+    if input_target in idiomas["Alemão"] or input_target in idiomas["Espanhol"] or input_target in idiomas["Inglês"] or input_target in idiomas["Italiano"] or input_target in idiomas["Japonês"]:
         if input_target in idiomas["Inglês"]:
             input_target = "Inglês"
         elif input_target in idiomas["Espanhol"]:
@@ -75,6 +77,9 @@ Italiano: """)
             input_target = "Alemão"
         elif input_target in idiomas["Italiano"]:
             input_target = "Italiano"
+        elif input_target in idiomas["Japonês"]:
+            input_target = "Japonês"
+        
         
         print(f"Você escolheu o idioma: {input_target}")
         time.sleep(1)
@@ -87,6 +92,8 @@ Italiano: """)
             input_target = "de-DE"
         elif input_target in idiomas["Italiano"]:
             input_target = "it-IT"
+        elif input_target in idiomas["Japonês"]:
+            input_target = "ja-JP"
 
         while vida > 0 and pontuação < 5:
             if input_level in dificuldade["1"]:
